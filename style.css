@@ -1,0 +1,200 @@
+.imgWrap {
+  height: 300px;
+width: 300px;
+cursor: pointer;
+transition: 0.1s;
+ display: block;
+margin:0 auto;
+position: relative;
+
+}
+.imgWrap .mainCookie:active {
+  transform: scale(0.95);
+}
+.imgWrap .mainCookie .chip {
+  background-color: #442813;
+  width: 3vmin;
+  height: 3vmin;
+  border-radius: 100%;
+  position: absolute;
+  border: 0.5vmin solid black;
+}
+
+.dropdown ul li{
+  padding: 10px;
+}
+
+.dropdown ul li:hover{
+  background-color: #f96;
+}
+
+.dropdown ul ul li:hover{
+  background-color: #69e;
+}
+
+.dropdown ul li .dropmenu ul{
+  display: inline-block;
+}
+
+.dropdown ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  background-color: #f63;
+}
+
+.dropdown ul ul{
+  display: none;
+  position: absolute;
+  background-color: #369;
+  margin-top: 10px;
+  margin-left: -10px;
+}
+
+.dropdown ul a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.dropdown ul ul a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.dropdown li:hover ul{
+  display: block;
+}
+
+.dropdown li:hover li{
+  display: block;
+}
+
+body {
+  background-color: #69e;
+  margin: 0;
+  display: flex;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+ul {
+  list-style-type: none;
+}
+ul li {
+  list-style-type: none;
+}
+
+p {
+  text-align: center;
+  margin: 10px;
+  font-family: raleway;
+  font-size: 4vmin;
+}
+
+.pointer {
+  width: 10vmin;
+}
+
+.wrap {
+  width: 50vw;
+  height: 100vh;
+  padding: 0;
+}
+.wrap li {
+  display: flex;
+  
+  padding: 2.5vh;
+  border: 1px solid black;
+  margin: 0;
+}
+.wrap li img {
+  height: 15vh;
+}
+.wrap li h1 {
+  margin: 0;
+}
+
+.main {
+  border-right: 1px solid black;
+}
+
+.shop {
+  overflow-y: scroll;
+  padding: 0;
+}
+.shop button {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: quicksand;
+  font-size: 3vmin;
+  background-color: transparent;
+  border-radius: 2px;
+  border: 1px solid black;
+  outline: none;
+  cursor: pointer;
+}
+.shop button:active {
+  border: 1px solid #222;
+}
+.shop button.active {
+  background-color: rgba(0, 255, 0, 0.5);
+  color: white;
+}
+.shop p {
+  font-size: 2vmin;
+  font-family: roboto slab;
+}
+
+@media (max-width: 500px) {
+  body {
+    height: 100%;
+    width: 100%;
+  }
+
+  .menu {
+    
+  }
+
+  .mainCookie {
+    transform: scale(1.5);
+    top: 17vh;
+    position: absolute;
+  }
+  .mainCookie:active {
+    transform: scale(1.425);
+  }
+
+  #sites {
+    position: absolute;
+  }
+
+  #messages {
+    display: none;
+  }
+
+  .wrap {
+    height: 60vh;
+    width: 100vmin;
+  }
+
+  .main {
+    height: 40vh;
+    border: none;
+  }
+
+  p {
+    font-size: 2em;
+  }
+
+  .shop p {
+    font-size: 1em;
+  }
+
+  .shop button {
+    font-size: 2em;
+  }
+}
